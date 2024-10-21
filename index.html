@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Receipt</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        
+        <div class="input-fields">
+            <label for="item-1-price">Item 1 Price:</label>
+            <input type="number" id="item-1-price" placeholder="Enter price">
+            <label for="qty-item1">Item 1 Quantity:</label>
+            <input type="number" id="qty-item1" placeholder="Enter quantity">
+
+            <label for="item-2-price">Item 2 Price:</label>
+            <input type="number" id="item-2-price" placeholder="Enter price">
+            <label for="qty-item2">Item 2 Quantity:</label>
+            <input type="number" id="qty-item2" placeholder="Enter quantity">
+
+            <label for="shipping">Shipping Charges:</label>
+            <input type="number" id="shipping" value="5" placeholder="Shipping charges">
+
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="restart()">Restart</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
